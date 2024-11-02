@@ -1,0 +1,56 @@
+/* Header Responsive Design */
+@media screen and (max-width: 720px) {
+  .header {
+    padding: 2rem 1.5rem;
+  }
+
+  .navbar ul li {
+    font-size: 1.7vw;
+    font-weight: 400;
+  }
+
+  .buttons button:nth-of-type(1) {
+    padding: 0.3rem 0.7rem;
+    font-family: font3;
+    font-size: 0.7rem;
+  }
+
+  .buttons button:nth-of-type(2) {
+    font-size: 1rem;
+  }
+
+  .home_page {
+    padding: 10rem 2rem;
+  }
+
+  .home_page p {
+    width: 100%;
+    font-size: 5vw;
+    font-family: font3;
+  }
+
+  .text p {
+    width: 100%;
+    font-size: 0.5rem;
+    color: rgb(145, 145, 145);
+  }
+
+  .home_star h3 {
+    display: none;
+  }
+}
+
+/* Header Responsive Design */
+@media screen and (max-width: 520px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .star h4 {
+    font-size: 0.7rem;
+  }
+
+  .text p {
+    font-size: 0.3rem;
+  }
+}
