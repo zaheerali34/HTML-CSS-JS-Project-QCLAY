@@ -38,6 +38,8 @@
   .home_star h3 {
     display: none;
   }
+
+  
 }
 
 /* Header Responsive Design */
@@ -53,4 +55,25 @@
   .text p {
     font-size: 0.3rem;
   }
+
+  .videoMeun video {
+   display: none;
+  }
+
+  .buttons button:nth-of-type(1) {
+    display: none;
+  }
+
+  .buttons .heyBtn {
+    display: block;
+    display: flex;
+    align-items: center;
+  } 
+
+  .menuPage .menu ul li {
+    font-size: 7vw;
+    margin-right: 1rem;
+    font-weight: 500;
+  }
+  
 }

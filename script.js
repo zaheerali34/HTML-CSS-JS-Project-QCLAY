@@ -4,7 +4,7 @@ function lenis() {
 
   // Listen for the scroll event and log the event data
   lenis.on("scroll", (e) => {
-    console.log(e);
+    // console.log(e);
   });
 
   // Use requestAnimationFrame to continuously update the scroll
@@ -47,23 +47,40 @@ function VideoAnimted() {
 }
 VideoAnimted();
 
-const menuPage = document.querySelector('.menuPage');
-const menuBtn = document.querySelector('#menu');
-const navbar = document.querySelector('.navbar');
+function menuPage() {
+  const menuPage = document.querySelector(".menuPage");
+  const menuBtn = document.querySelector("#menu");
+  const navbar = document.querySelector(".navbar");
 
-let text = false;
+  let text = false;
 
-menuBtn.addEventListener('click', ()=> {
-  menuPage.classList.toggle('show')
-  
-  if (!text) {
-    menuBtn.innerText = 'Close';
-    navbar.style.opacity = '0'
-    navbar.style.transition = '0.5s'
-    text = true;
-  } else {
-    menuBtn.innerText = 'menu';
-    navbar.style.opacity = '1'
-    text = false;
-  }
-})
+  menuBtn.addEventListener("click", () => {
+    menuPage.classList.toggle("show");
+
+    if (!text) {
+      menuBtn.innerText = "Close";
+      navbar.style.opacity = "0";
+      navbar.style.transition = "0.5s";
+      text = true;
+    } else {
+      menuBtn.innerText = "menu";
+      navbar.style.opacity = "1";
+      text = false;
+    }
+  });
+}
+menuPage();
+
+function Slides() {
+  gsap.to(".slide", {
+    scrollTrigger: {
+      trigger: ".real",
+      start: "top top",
+      end: "bottom bottom",
+      scrub: 2,
+    },
+    xPercent: -300,
+    ease: Power4,
+  });
+}
+Slides();
