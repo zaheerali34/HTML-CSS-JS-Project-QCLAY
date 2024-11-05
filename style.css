@@ -12,9 +12,9 @@ body {
   position: relative;
 }
 
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
-} */
+}
 
 @font-face {
   font-family: font1;
@@ -336,7 +336,7 @@ body {
 }
 
 .clients_Video {
-  width: 50%;
+  width: 35vw;
   height: 35vh;
   position: relative;
 }
@@ -370,4 +370,130 @@ body {
 
 .fover {
   background-color: yellow;
+}
+
+/* studio_pages */
+
+.studio_pages {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/grid.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg_images  {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg_images img {
+  width: 55vw;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.167);
+  object-fit: cover;
+}
+
+.imgOne {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+}
+
+.imgTwo {
+  position: absolute;
+  top: 7rem;
+  right: 4rem;
+}
+
+.imgThree {
+  position: absolute;
+  left: 10rem;
+  bottom: 4rem;
+}
+
+.imgfover {
+  position: absolute;
+  right: 10rem;
+  bottom: 10rem;
+}
+
+/* design_pages */
+.design_pages {
+  width: 100%;
+  height: 100vh;
+  background-color: #b0a8d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.design_pages h1 {
+  font-size: 7vw;
+}
+
+.design_pages h1:nth-of-type(2) {
+  color: white;
+}
+
+.box_img {
+  display: flex;
+  align-items: center;
+}
+
+.box_img h1:nth-of-type(2) {
+  color: black;
+}
+
+.profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+  padding: 0.5rem;
+}
+
+.profile img {
+  width: 4vw;
+}
+
+.images_anim {
+  width: 100%;
+}
+
+.images_anim .one {
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
+  width: 20%;
+  border-radius: 2rem;
+  transform: rotate(10deg);
+}
+
+.images_anim .two {
+  position: absolute;
+  top: 10rem;
+  right: 4rem;
+  width: 25%;
+  border-radius: 2rem;
+  transform: rotate(-10deg);
+}
+
+.images_anim .three {
+  position: absolute;
+  top: 20rem;
+  bottom: 4rem;
+  left: 30%;
+  width: 30%;
+  border-radius: 2rem;
+  transform: rotate(10deg);
 }
