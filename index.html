@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QCLAY.com</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="Responsive.css">
+    <link rel="stylesheet" href="Responsive.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.14/dist/lenis.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.1.14/dist/lenis.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-
     <div id="boxPage"></div>
     <div id="main">
       <!-- Header -->
@@ -65,7 +71,8 @@
             Let's Talk!
           </button>
           <button class="heyBtn">
-            Hey! <span><video loop muted autoplay src="images/ch.mp4"></video></span>
+            Hey!
+            <span><video loop muted autoplay src="images/ch.mp4"></video></span>
           </button>
           <button id="menu">menu</button>
         </nav>
@@ -73,30 +80,30 @@
 
       <!-- Menu Page -->
       <section class="menuPage">
-          <div class="social">
-            <ul>
-              <li>Social</li>
-              <li>Dribbble</li>
-              <li>Behance</li>
-              <li>Twitter</li>
-              <li>Pinterest</li>
-              <li>Linkedln</li>
-            </ul>
-          </div>
+        <div class="social">
+          <ul>
+            <li>Social</li>
+            <li>Dribbble</li>
+            <li>Behance</li>
+            <li>Twitter</li>
+            <li>Pinterest</li>
+            <li>Linkedln</li>
+          </ul>
+        </div>
 
-          <div class="videoMeun">
-            <video loop muted autoplay src="images/2 (1).mp4"></video>
-          </div>
+        <div class="videoMeun">
+          <video loop muted autoplay src="images/2 (1).mp4"></video>
+        </div>
 
-          <div class="menu">
-            <ul>
-              <li>Menu</li>
-              <li>About Us</li>
-              <li>What We Do</li>
-              <li>Our Works</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
+        <div class="menu">
+          <ul>
+            <li>Menu</li>
+            <li>About Us</li>
+            <li>What We Do</li>
+            <li>Our Works</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
       </section>
 
       <!-- Home Page -->
@@ -137,105 +144,175 @@
       </section>
 
       <!-- Slider Scoller -->
-       <section class="real">
+      <section class="real">
         <div class="container_slider">
           <div class="slides">
             <div class="slide one">
               <h1>What About QClay?</h1>
             </div>
             <div class="slide two">
-                <div class="box_clients bg_one">
-                  <div class="clients_Video">
-                    <video loop autoplay muted src="/images/slider One.mp4"></video>
-                  </div>
-                  
-                  <h1 class="text">We help our clients</h1>
-                  <h1>to shine online</h1>
-                  <p>We collaborate as a collective of individuals bringing their whole self to a project and, together, create work that none of us would be able to do on our own.</p>
+              <div class="box_clients bg_one">
+                <div class="clients_Video">
+                  <video
+                    loop
+                    autoplay
+                    muted
+                    src="/images/slider One.mp4"
+                  ></video>
                 </div>
+
+                <h1 class="text">We help our clients</h1>
+                <h1>to shine online</h1>
+                <p>
+                  We collaborate as a collective of individuals bringing their
+                  whole self to a project and, together, create work that none
+                  of us would be able to do on our own.
+                </p>
+              </div>
             </div>
 
             <div class="slide two">
               <div class="box_clients bg_two">
                 <div class="clients_Video">
-                  <video loop autoplay muted src="/images/slider Two.mp4"></video>
+                  <video
+                    loop
+                    autoplay
+                    muted
+                    src="/images/slider Two.mp4"
+                  ></video>
                 </div>
-                
+
                 <h1 class="text">We translate research</h1>
                 <h1>into solutions</h1>
-                <p>We collaborate as a collective of individuals bringing their whole self to a project and, together, create work that none of us would be able to do on our own.</p>
+                <p>
+                  We collaborate as a collective of individuals bringing their
+                  whole self to a project and, together, create work that none
+                  of us would be able to do on our own.
+                </p>
               </div>
-          </div>`
-
-          <div class="slide two">
-            <div class="box_clients bg_three">
-              <div class="clients_Video">
-                <video loop autoplay muted src="/images/slider Three.mp4"></video>
-              </div>
-              
-              <h1 class="text">Our team is very</h1>
-              <h1>global</h1>
-              <p>We collaborate as a collective of individuals bringing their whole self to a project and, together, create work that none of us would be able to do on our own.</p>
             </div>
-        </div>
-        </div>
-        </div>
-       </section>
+            `
 
-       <!-- Studio Pages -->
-       <section class="studio_pages">
-          <div class="bg_images">
-            <img src="/images/image BG.png" alt="">
+            <div class="slide two">
+              <div class="box_clients bg_three">
+                <div class="clients_Video">
+                  <video
+                    loop
+                    autoplay
+                    muted
+                    src="/images/slider Three.mp4"
+                  ></video>
+                </div>
+
+                <h1 class="text">Our team is very</h1>
+                <h1>global</h1>
+                <p>
+                  We collaborate as a collective of individuals bringing their
+                  whole self to a project and, together, create work that none
+                  of us would be able to do on our own.
+                </p>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="por">
+      <!-- Studio Pages -->
+      <section class="studio_pages">
+        <div class="bg_images">
+          <img src="/images/image BG.png" alt="" />
+        </div>
+
+        <div class="por">
           <div class="imgOne">
-            <img src="/images/1.webp" alt="">
+            <img src="/images/1.webp" alt="" />
           </div>
 
           <div class="imgTwo">
-            <img src="/images/2.webp" alt="">
+            <img src="/images/2.webp" alt="" />
           </div>
 
           <div class="imgThree">
-            <img src="/images/4.webp" alt="">
+            <img src="/images/4.webp" alt="" />
           </div>
 
           <div class="imgfover">
-            <img src="/images/6.webp" alt="">
+            <img src="/images/6.webp" alt="" />
           </div>
-          </div>
-       </section>
+        </div>
+      </section>
 
-       <section class="design_pages">
+      <!-- Design pages -->
+      <section class="design_pages">
         <h1>Each of our designers</h1>
         <h1>was the best among</h1>
         <div class="box_img">
           <h1>several</h1>
           <div class="profile">
-            <img src="/images/Profile image/1.webp" alt="">
-            <img src="/images/Profile image/2.webp" alt="">
-            <img src="/images/Profile image/4.webp" alt="">
-            <img src="/images/Profile image/5.webp" alt="">
-            <img src="/images/Profile image/6.webp" alt="">
-            <img src="/images/Profile image/7.webp" alt="">
-            <img src="/images/Profile image/8.webp" alt="">
-            <img src="/images/Profile image/9.webp" alt="">
+            <img src="/images/Profile image/1.webp" alt="" />
+            <img src="/images/Profile image/2.webp" alt="" />
+            <img src="/images/Profile image/4.webp" alt="" />
+            <img src="/images/Profile image/5.webp" alt="" />
+            <img src="/images/Profile image/6.webp" alt="" />
+            <img src="/images/Profile image/7.webp" alt="" />
+            <img src="/images/Profile image/8.webp" alt="" />
+            <img src="/images/Profile image/9.webp" alt="" />
           </div>
           <h1>others</h1>
         </div>
 
         <div class="images_anim">
-          <img src="/images/large.webp" alt="" class="one">
-          <img src="/images/medium.webp" alt="" class="two">
-          <img src="/images/small.webp" alt="" class="three">
+          <img src="/images/large.webp" alt="" class="one" />
+          <img src="/images/medium.webp" alt="" class="two" />
+          <img src="/images/small.webp" alt="" class="three" />
         </div>
-       </section>
+      </section>
 
-      <section style="height: 100vh;"></section>
+      <!-- textScoller -->
+      <section class="sir_page">
+        <p>
+          Majority of people can run a 100 meter dash, but only a dozen can do
+          it in under 9.8 seconds
+        </p>
+      </section>
+
+      <!-- slider -->
+      <section class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/images/1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/2.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/3.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/4.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/5.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/6.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/7.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/8.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/9.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="canvas_page">
+        <canvas></canvas>
+      </section>
     </div>
-
-
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
@@ -249,7 +326,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="script.js"></script>
   </body>
 </html>

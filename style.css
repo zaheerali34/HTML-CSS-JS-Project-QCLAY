@@ -42,6 +42,7 @@ body::-webkit-scrollbar {
 }
 
 #main {
+  width: 100%;
   position: relative;
   background-color: #fff;
 }
@@ -472,17 +473,17 @@ body::-webkit-scrollbar {
 
 .images_anim .one {
   position: absolute;
-  top: 3rem;
-  left: 4rem;
-  width: 20%;
+  top: -50%;
+  left: 10%;
+  width: 30%;
   border-radius: 2rem;
   transform: rotate(10deg);
 }
 
 .images_anim .two {
   position: absolute;
-  top: 10rem;
-  right: 4rem;
+  top: -50%;
+  right: 35%;
   width: 25%;
   border-radius: 2rem;
   transform: rotate(-10deg);
@@ -490,10 +491,60 @@ body::-webkit-scrollbar {
 
 .images_anim .three {
   position: absolute;
-  top: 20rem;
+  top: -60%;
   bottom: 4rem;
-  left: 30%;
-  width: 30%;
+  left: 65%;
+  width: 33%;
   border-radius: 2rem;
   transform: rotate(10deg);
+}
+
+/* textScoller */
+.sir_page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 10rem;
+}
+
+.sir_page p span{
+  font-size: 6vw;
+  color: #6e6e6e00;
+}
+
+.swiper {
+  width: 100%;
+  height: 70vh;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  margin-top: 5rem;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* canvas_page */
+.canvas_page {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.canvas_page canvas {
+  max-width: 50%;
+  max-height: 100vh;
+  position: relative;
+  border-radius: 3rem;
+  top: 50%;
 }
