@@ -535,16 +535,200 @@ body::-webkit-scrollbar {
 
 /* canvas_page */
 .canvas_page {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .canvas_page canvas {
-  max-width: 50%;
-  max-height: 100vh;
   position: relative;
-  border-radius: 3rem;
+  z-index: 9;
+  max-width: 50vw;
+  max-height: 100vh;
   top: 50%;
+  border-radius: 50px;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.footer .top {
+  width: 100%;
+  height: 100%;
+  margin-top: 20rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 10rem;
+}
+
+.oneBox {
+  width: 50%;
+  height: 100vh;
+  padding: 10rem 0;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.text_foot {
+  width: 100%;
+}
+
+.text_foot div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.text_foot div h2 {
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+.oneBox .text_foot video {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.text_foot h3 {
+  font-size: 3vw;
+  font-weight: 400;
+}
+
+.clientsUs .star {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.clientsUs h2 {
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: #969696;
+}
+
+.follow h2 {
+  font-size: 1.5vw; 
+  color: #969696;
+  font-weight: 500;
+}
+
+.follow li {
+  list-style: none;
+  font-size: 1.5vw;
+  padding: 1rem 0;
+  display: flex;
+  gap: 15px;
+}
+
+.follow li i {
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.follow li i:hover {
+  color: white;
+  background-color: #898989;
+}
+
+.twoBox {
+  width: 50%;
+  height: 100vh;
+  padding: 10rem 0;
+}
+
+.twoBox form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.twoBox form .inputText {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputText input {
+  width: 20vw;
+  border: none;
+  border-bottom: 2px solid rgb(155, 155, 155);
+  outline: none;
+  padding: 1rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.inputText input:focus {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.inputText label {
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.twoBox .border {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+
+.twoBox .border span {
+  border: 1px solid rgb(213, 213, 213);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+}
+
+.footer .bottom {
+  width: 100%;
+  padding: 0 10rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.bottom .left p {
+  color: #b0b0b0;
+  font-size: 1.1vw;
+}
+
+.bottom .left h4 {
+  padding-top: 4rem;
+  font-size: 1vw;
+  font-weight: 500;
+  color: black;
+}
+
+.bottom .right {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bottom .right h4 {
+  background-color: #e6e6e6;
+  text-align: center;
+  padding: 10px; 
+  border-radius: 3rem;
+  font-weight: 500;
+}
+
+.bottom .right span {
+  color: #b0b0b0;
 }
