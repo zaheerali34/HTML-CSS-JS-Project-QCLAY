@@ -543,10 +543,10 @@ body::-webkit-scrollbar {
 .canvas_page canvas {
   position: relative;
   z-index: 9;
-  max-width: 50vw;
+  max-width: 80rem;
   max-height: 100vh;
-  top: 50%;
   border-radius: 50px;
+  top: 15%;
 }
 
 /* footer */
@@ -561,7 +561,6 @@ body::-webkit-scrollbar {
 .footer .top {
   width: 100%;
   height: 100%;
-  margin-top: 20rem;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -680,6 +679,11 @@ body::-webkit-scrollbar {
   font-weight: 500;
 }
 
+.twoBox h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .twoBox .border {
   display: flex;
   align-items: center;
@@ -732,3 +736,4 @@ body::-webkit-scrollbar {
 .bottom .right span {
   color: #b0b0b0;
 }
+

@@ -17,9 +17,29 @@ function lenis() {
 }
 lenis();
 
+function header() {
+  gsap.from('.header', {
+    y: -300,
+    opacity: 0,
+    duration: 1,
+  })
+}
+header();
+
+function home() {
+  gsap.from('.home_page', {
+    x: -300,
+    opacity: 0,
+    duration: 1,
+    delay: 1,
+  })
+}
+home();
+
 function box() {
   const boxPage = document.querySelector("#boxPage");
   const main = document.querySelector("#main");
+  const box = document.querySelector(".box");
 
   main.addEventListener("mousemove", (e) => {
     gsap.to(boxPage, {
@@ -44,6 +64,7 @@ function VideoAnimted() {
       scrub: 0.5,
     },
   });
+  
 }
 VideoAnimted();
 
@@ -142,7 +163,7 @@ function sir() {
       scroller: `body`,
       scrub: 0.5,
     },
-    stagger: 0.2,
+    stagger: 0.5,
     color: `#000000`,
   });
 }
@@ -280,3 +301,20 @@ https://qclay.design/images/startups/frames/rope_035.webp
   });
 }
 canvas();
+
+
+function canvasPages() {
+  gsap.from(".canvas_page", {
+    scale: 0.5,
+    duration: 0.5,
+    scrollTrigger: {
+      trigger: ".canvas_page canvas",
+      scroller: "body",
+      start: "top 100%",
+      end: "top -50%",
+      scrub: 0.5,
+    },
+  });
+  
+}
+canvasPages();
