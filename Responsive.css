@@ -245,6 +245,11 @@
     padding: 0 1rem;
   }
 
+  .pin-spacer .images_anim .three {
+    width: 55%;
+    left: 40%;
+}
+
   .box_img {
     align-items: start;
     flex-direction: column;
@@ -311,6 +316,15 @@
     padding: 0.7rem 1rem;
     font-size: 0.7rem;
   }
+
+  .text_foot div {
+    width: 15rem;
+  }
+
+  .text_foot {
+    width: 100%;
+    margin-left: -4rem;
+  } 
 
   .footer .bottom {
     bottom: -32rem;
