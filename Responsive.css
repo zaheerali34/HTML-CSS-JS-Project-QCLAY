@@ -181,6 +181,14 @@
 
 /* Header Responsive Design */
 @media screen and (max-width: 520px) {
+  #boxPage {
+    display: none;
+  }
+
+  .header .buttons {
+    margin-right: 7rem;
+  }
+
   .navbar ul {
     display: none;
   }
@@ -213,9 +221,23 @@
     font-weight: 500;
   }
 
+  .video {
+    margin-top: -8rem;
+  }
+
+  .video video {
+    height: 100vh;
+  }
+
+  .box_clients {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  }
+
   .bg_images img {
-    width: 80vw;
+    width: 90vw;
     height: 90vh;
+    border-radius: 10px
   }
 
   .design_pages h1 {
@@ -290,4 +312,25 @@
     font-size: 0.7rem;
   }
 
+  .footer .bottom {
+    bottom: -32rem;
+  }
+
+  .bottom .left p {
+    color: #b0b0b0;
+    font-size: 3vw;
+  }
+
+  .bottom .left h4 {
+    font-size: 3vw;
+  }
+
+  .bottom .right h4 {
+    padding: 7px 5px;
+  }
+
+  .bottom .right span {
+    color: #b0b0b0;
+    font-size: 11px;
+  }
 }
